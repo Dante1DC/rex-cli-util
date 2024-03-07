@@ -54,7 +54,7 @@ def explore_directory(current_path)
     end
     list_directory(current_path, selected)
     puts "\nType to filter, ';b' to go back, ';q' to quit, ';e' to execute command."
-    puts "Filter: #{filter}" unless filter.empty?
+    print "\nCurrent Path: #{current_path}/#{filter}"  # Append the current filter to the end of the current file path
   }
 
   loop do
